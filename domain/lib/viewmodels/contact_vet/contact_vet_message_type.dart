@@ -17,4 +17,5 @@ enum ContactVetMessageType {
   letsConnectVideoOrPhone,
   letsConnectVideoOrPhoneInformation,
   noThanks,
+  zooplus
 }

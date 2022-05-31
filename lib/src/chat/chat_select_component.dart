@@ -34,6 +34,8 @@ class ChatSelectComponent extends ChatStreamedEventsControls<SelectOptionConfirm
 
   bool get externalLinksEventsEnabled => _config.externalLinksEventsEnabled;
 
+  bool get zooplusButtonEnabled => _config.zooplusButtonEnabled;
+
   bool isUrlRedirection(OptionViewModel item) => item.key is MessageUrlButtonDefinition;
 
   String itemUrl(OptionViewModel item) {
@@ -49,6 +51,7 @@ class ChatSelectComponent extends ChatStreamedEventsControls<SelectOptionConfirm
   }
 
   String itemDescription(OptionViewModel item) {
+    print(item.key);
     if (item.key is PetHealthChatMessageType ||
         item.key is NutribotChatMessageType ||
         item.key is ContactVetMessageType) {

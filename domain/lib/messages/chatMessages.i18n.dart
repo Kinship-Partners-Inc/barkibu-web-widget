@@ -94,6 +94,7 @@ class BotMessagesChatMessages {
 	String get optionGoBackTitle => "Go back";
 	String get askFeedback => "Has my answer been <b>helpful</b>?";
 	String get emptyPhoneNumber => "Ok, it seems like we don’t have a Phone Number to get in touch with you. Enter your phone number so we can schedule a call.";
+  String get zooplus => "Shop on Zooplus";
 }
 
 class SymptomFrequencyChatMessages {

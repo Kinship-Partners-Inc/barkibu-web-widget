@@ -42,6 +42,8 @@ class ContactVetMessageTypeMapping {
         return _messagesModel.sharedMessages.yes;
       case ContactVetMessageType.no:
         return _messagesModel.sharedMessages.no;
+      case ContactVetMessageType.zooplus:
+        return _messagesModel.sharedMessages.zooplus;
       default:
         return null;
     }

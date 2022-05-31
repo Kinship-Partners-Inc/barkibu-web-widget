@@ -63,6 +63,7 @@ class SharedMessages {
 	String get ok => "Ok";
 	String get video => "Video";
 	String get castrated => "Castrated";
+  String get zooplus => "Shop on Zooplus"
 }
 
 class ErrorsSharedMessages {

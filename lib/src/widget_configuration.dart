@@ -49,6 +49,8 @@ class WidgetConfiguration extends Configuration {
 
   bool get chatWithVetEnabled => _clientIdOverridenValue('chatWithVetEnabled') ?? config.chatWithVetEnabled;
 
+  bool get zooplusButtonEnabled => _clientIdOverridenValue('zooplusButtonEnabled') ?? config.zooplusButtonEnabled;
+
   @override
   String get backendUrl => _clientIdOverridenValue('apiUrl') ?? config.apiUrl;
 
