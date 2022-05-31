@@ -26,7 +26,7 @@ jobs:
         run: |
           if [ ${{ github.base_ref }} == 'dev' ]; then
             echo "stack_name=vetinsight-dev" >> $GITHUB_ENV
-          elif [ ${{ github.base_ref }} == 'main' ]; then
+          elif [ ${{ github.base_ref }} == 'master' ]; then
             echo "stack_name=vetinsight-production" >> $GITHUB_ENV
           elif [ ${{ github.base_ref }} == 'staging' ]; then
             echo "stack_name=vetinsight-staging" >> $GITHUB_ENV
