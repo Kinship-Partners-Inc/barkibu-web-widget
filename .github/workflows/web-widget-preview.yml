@@ -9,7 +9,7 @@ env:
 jobs:
   infra_diff:
     runs-on: ubuntu-latest
-    if: github.base_ref == 'dev' || github.base_ref == 'main'
+    if: github.base_ref == 'dev' || github.base_ref == 'master'
     steps:
       - name: Checkout repo
         uses: actions/checkout@v2
