@@ -3,7 +3,7 @@ on:
   push:
     branches:
       - master
-      - dev
+      - develop
       - staging
     # paths:
     # - infrastructure
@@ -33,7 +33,7 @@ jobs:
         uses: tj-actions/branch-names@v2.2
       - name: Set env vars to be used in deploy steps
         run: |
-          if [ ${{ steps.branch-name.outputs.current_branch }} == 'dev' ]; then
+          if [ ${{ steps.branch-name.outputs.current_branch }} == 'develop' ]; then
             echo "environment=dev" >> $GITHUB_ENV
             echo "stack_name=vetinsight-dev" >> $GITHUB_ENV
           elif [ ${{ steps.branch-name.outputs.current_branch }} == 'master' ]; then

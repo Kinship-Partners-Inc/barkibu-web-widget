@@ -9,7 +9,7 @@ env:
 jobs:
   infra_diff:
     runs-on: ubuntu-latest
-    if: github.base_ref == 'dev' || github.base_ref == 'master'
+    if: github.base_ref == 'develop' || github.base_ref == 'master'
     steps:
       - name: Checkout repo
         uses: actions/checkout@v2
@@ -24,7 +24,7 @@ jobs:
         uses: aws-actions/amazon-ecr-login@v1
       - name: Set env vars to be used in deploy steps
         run: |
-          if [ ${{ github.base_ref }} == 'dev' ]; then
+          if [ ${{ github.base_ref }} == 'develop' ]; then
             echo "stack_name=vetinsight-dev" >> $GITHUB_ENV
           elif [ ${{ github.base_ref }} == 'master' ]; then
             echo "stack_name=vetinsight-production" >> $GITHUB_ENV
