@@ -2,7 +2,7 @@ name: web-widget-apply
 on:
   push:
     branches:
-      - main
+      - master
       - dev
       - staging
     # paths:
@@ -36,7 +36,7 @@ jobs:
           if [ ${{ steps.branch-name.outputs.current_branch }} == 'dev' ]; then
             echo "environment=dev" >> $GITHUB_ENV
             echo "stack_name=vetinsight-dev" >> $GITHUB_ENV
-          elif [ ${{ steps.branch-name.outputs.current_branch }} == 'main' ]; then
+          elif [ ${{ steps.branch-name.outputs.current_branch }} == 'master' ]; then
             echo "environment=production" >> $GITHUB_ENV
             echo "stack_name=vetinsight-production" >> $GITHUB_ENV
           elif [ ${{ steps.branch-name.outputs.current_branch }} == 'staging' ]; then
