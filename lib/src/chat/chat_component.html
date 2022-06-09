@@ -39,7 +39,7 @@
         <widget-button type="secondary" link
                        [linkHref]="RoutePaths.clinicsFinder.toUrl()"
                        (click)="logFindClinicAfterAiJourney()"
-                       *ngIf="isUrgent"
+                       *ngIf="isUrgent && findAClinicEnabled"
                        [text]="messages.homeMessages.messages.findClinics.title">
         </widget-button>
     </widget-footer>
