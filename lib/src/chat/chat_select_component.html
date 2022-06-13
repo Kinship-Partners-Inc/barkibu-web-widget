@@ -15,4 +15,14 @@
       </button>
     </template>
   </li>
+  <li>
+    <widget-button type="secondary"
+                   link
+                   externalLink
+                   [text]="'Shop on Zooplus'"
+                   [linkHref]="'https://www.zooplus.co.uk/'"
+                   *ngIf="zooplusButtonEnabled && noFoodRecommended">
+
+    </widget-button>
+  </li>
 </ul>

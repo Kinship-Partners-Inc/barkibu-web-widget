@@ -1,8 +1,8 @@
 import 'package:angular/angular.dart';
 import 'package:common_barkibu_dart/datasources/datasources.dart';
+import 'package:common_barkibu_dart/shared/chat/chat_message_type_mapping.dart';
 import 'package:common_barkibu_dart/viewmodels/contact_vet/contact_vet_message_type.dart';
 import 'package:common_barkibu_dart/viewmodels/viewmodels.dart';
-import 'package:common_barkibu_dart/shared/chat/chat_message_type_mapping.dart';
 import 'package:web_widget/src/chat/chat_control_events.dart';
 import 'package:web_widget/src/chat/chat_streamed_events_control.dart';
 import 'package:web_widget/src/navigation/widget_button_component.dart';
@@ -34,7 +34,7 @@ class ChatSelectComponent extends ChatStreamedEventsControls<SelectOptionConfirm
 
   bool get externalLinksEventsEnabled => _config.externalLinksEventsEnabled;
 
-  // bool get zooplusButtonEnabled => _config.zooplusButtonEnabled;
+  bool get zooplusButtonEnabled => _config.zooplusButtonEnabled;
 
   bool isUrlRedirection(OptionViewModel item) => item.key is MessageUrlButtonDefinition;
 
