@@ -57,6 +57,8 @@ targets:
           marketingOptInEnabled: false
           privacyUrl: ''
           affiliatesUrl: ''
+          petSexAndSpayedStatusEnabled: false
+          findClinicButtonInChatEnabled: false
 
           # Fallback theme & client_id
           iconsTheme: 'fur-life'

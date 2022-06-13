@@ -58,6 +58,9 @@ targets:
           marketingOptInEnabled: false
           privacyUrl: ''
           affiliatesUrl: ''
+          findClinicButtonInChatEnabled: false
+          petSexAndSpayedStatusEnabled: true
+
 
           # Fallback theme & client_id
           iconsTheme: 'greatergood'

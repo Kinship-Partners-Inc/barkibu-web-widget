@@ -19,8 +19,8 @@ targets:
           telehealthVideoCapabilityEnabled: true
           telehealthMediaSharingEnabled: true
           nutribotEnabled: true
-          findAClinicEnabled: false
-          findAClinicAddressApiEnabled: false
+          findAClinicEnabled: true
+          findAClinicAddressApiEnabled: true
           askAVetDirectlyEnabled: true
           aivetEnabled: true
           conciergeUrl: null
@@ -57,6 +57,8 @@ targets:
           useSpecialTranslations: 'tsc'
           virtualVetInfoEnabled: true
           externalToSEnabled: false
+          petSexAndSpayedStatusEnabled: true
+          findClinicButtonInChatEnabled: true
 
           # Fallback theme & client_id
           iconsTheme: 'iams'

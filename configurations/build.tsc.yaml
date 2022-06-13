@@ -56,6 +56,8 @@ targets:
           marketingOptInEnabled: false
           privacyUrl: ''
           affiliatesUrl: ''
+          petSexAndSpayedStatusEnabled: true
+          findClinicButtonInChatEnabled: false
 
           # Fallback theme & client_id
           iconsTheme: 'tsc'
