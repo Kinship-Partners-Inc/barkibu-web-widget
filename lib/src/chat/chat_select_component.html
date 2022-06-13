@@ -1,6 +1,5 @@
 <ul>
   <li *ngFor="let item of viewModel.items">
-    <p>{{item}} - {{isUrlRedirection(item)}} -{{viewModel}}</p>
     <template [ngIf]="isUrlRedirection(item)">
       <widget-button type="secondary" link externalLink [text]="itemDescription(item)" [linkHref]="itemUrl(item)"
           *ngIf="!externalLinksEventsEnabled">
@@ -15,7 +14,5 @@
         {{itemDescription(item)}}
       </button>
     </template>
-    <widget-button type="secondary" link externalLink [text]="'Shop on Zooplus'" [linkHref]="'https://www.zooplus.co.uk/'" *ngIf="zooplusButtonEnabled">
-    </widget-button>
   </li>
 </ul>

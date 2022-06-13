@@ -28,6 +28,7 @@ enum ChatButtonOptionType {
   backHome,
   goBack,
   noThanks,
+  zooplus
 }
 
 abstract class ChatViewModel {

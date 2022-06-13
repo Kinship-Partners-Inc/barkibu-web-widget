@@ -34,7 +34,7 @@ class ChatSelectComponent extends ChatStreamedEventsControls<SelectOptionConfirm
 
   bool get externalLinksEventsEnabled => _config.externalLinksEventsEnabled;
 
-  bool get zooplusButtonEnabled => _config.zooplusButtonEnabled;
+  // bool get zooplusButtonEnabled => _config.zooplusButtonEnabled;
 
   bool isUrlRedirection(OptionViewModel item) => item.key is MessageUrlButtonDefinition;
 
