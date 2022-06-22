@@ -10,8 +10,8 @@ targets:
           authByEmailEnabled: false
           authByPhoneEnabled: false
           useLegacyAuthDatasource: true
-          authServiceAppClientId: 31qaqegtccfr74muv4mva34112
-          authServiceUserPoolId: eu-west-1_mBvhLXyqt
+          authServiceAppClientId: 3ql2ser61bn9ub3dlpr8a0pj1r
+          authServiceUserPoolId: eu-west-1_iOJbwm0YC
           externalProfileDataEnabled: true
 
           # Basic features
@@ -44,9 +44,9 @@ targets:
           assessmentDateFormat: MM/dd/yyyy
           defaultPhonePrefix: '+1'
           appName: 'VetInsight Assistant'
-          brandName: 'The Wildest'
-          brandLogo: 'wildest-logo.png'
-          brandLogoWidth: '170px'
+          brandName: 'The Wildest Pack'
+          brandLogo: 'thewildest_pack.png'
+          brandLogoWidth: '250px'
           headerWithoutLogo: false
           botPreMessageDelay: 1000
           botPostMessageDelay: 400
@@ -55,26 +55,25 @@ targets:
           externalToSEnabled: false
           marketingBrandName: ''
           marketingOptInEnabled: false
-          affiliatesUrl: ''
           privacyUrl: ''
-          findClinicButtonInChatEnabled: false
-          buyNowWithVendorName: ''
+          affiliatesUrl: ''
           petSexAndSpayedStatusEnabled: true
+          findClinicButtonInChatEnabled: false
 
           # Fallback theme & client_id
-          iconsTheme: 'thewildest'
-          fallbackTheme: 'thewildest'
-          fallbackClientId: 'thewildest'
+          iconsTheme: 'thewildest-pack'
+          fallbackTheme: 'thewildest-pack'
+          fallbackClientId: 'thewildest-pack'
 
           # Contanct vet options
           chatWithVetEnabled: false
           chatOnPhoneCallUrl: null
-          emailAccount: getvethelp@thewildest-app.vetinsight.com
+          emailAccount: vet.help@mail.kinship.barkibu.com
 
           # System configuration
-          envName: 'production'
-          apiUrl: 'https://the-wildest-vet-insight.herokuapp.com/v2'
-          segmentWriteKey: 'Ud1XtGhWcnYlGqSWJjksarQ6v1MCsNLA'
+          envName: 'staging'
+          apiUrl: 'https://kinship-ch-staging.herokuapp.com/v2'
+          segmentWriteKey: 'rPPj23gMWicB6Kt2CzQKVuUvnhwsR9wo'
 
           # Overriden configuration for each client id
           clientIdConfigOverride: null
